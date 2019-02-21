@@ -9,6 +9,7 @@ Nucleus that manages the repository and the entity framework core .net
 
 # Lambda.Repository
 Project is in charge of creating repository and entity framework management functionality and migration of domain entities
+ContextFactory.cs: This is where the SQL Server connection string is located.
 
 # TestConsole
 Project that adds a record in the example table.
