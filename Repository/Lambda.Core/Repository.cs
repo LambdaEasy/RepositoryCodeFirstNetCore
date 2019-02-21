@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Lambda.Domain.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Lambda.Core
 {
-    public partial class Repository<T, TKey> : IRepository<T, TKey> where T : BaseEntity<TKey>
+    public abstract class Repository<T, TKey> : IRepository<T, TKey> where T : class, IEntity<TKey>
     {
 
         #region Properties

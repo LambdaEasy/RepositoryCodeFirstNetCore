@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Lambda.Core
 {
-    public interface IRepository<T, TKey> where T : BaseEntity<TKey>
+    public interface IRepository<T, in TKey> where T : class
     {
         #region Properties
 
